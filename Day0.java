@@ -8,7 +8,6 @@ public class Solution {
 		scan.close(); 
 		System.out.println("Hello, World.");
     
-        System.out.println("Welcome to 30 Days of Code!")
-        System.out.println(inputString);
+        System.out.println("Welcome to 30 Days of Code!");
 	}
 }
