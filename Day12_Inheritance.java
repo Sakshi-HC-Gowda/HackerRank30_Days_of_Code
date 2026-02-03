@@ -1,0 +1,26 @@
+class Student extends Person {
+    private int[] testScores;
+
+    // Constructor
+    Student(String firstName, String lastName, int id, int[] scores) {
+        super(firstName, lastName, id);
+        this.testScores = scores;
+    }
+
+    // Calculate grade
+    public char calculate() {
+        int sum = 0;
+        for (int score : testScores) {
+            sum += score;
+        }
+
+        int avg = sum / testScores.length;
+
+        if (avg >= 90) return 'O';
+        else if (avg >= 80) return 'E';
+        else if (avg >= 70) return 'A';
+        else if (avg >= 55) return 'P';
+        else if (avg >= 40) return 'D';
+        else return 'T';
+    }
+}
